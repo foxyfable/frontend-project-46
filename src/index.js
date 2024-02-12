@@ -11,8 +11,8 @@ const gendiff = (path1, path2, type) => {
   const data1 = readFile(path1);
   const data2 = readFile(path2);
 
-  const file1 = parse(data1, getFiletype(filepath1));
-  const file2 = parse(data2, getFiletype(filepath2));
+  const file1 = parse(data1, getFiletype(path1));
+  const file2 = parse(data2, getFiletype(path2));
 
   return `${file1} ${file2}`;
 };
