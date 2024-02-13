@@ -2,7 +2,7 @@
   "name": "frontend-project-46",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/foxyfable/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/foxyfable/frontend-project-46/actions)",
-  "main": "src/gendiff.js",
+  "main": "src/index.js",
   "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
