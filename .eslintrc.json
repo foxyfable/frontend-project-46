@@ -6,9 +6,16 @@
     "extends": "airbnb-base",
     "parserOptions": {
         "ecmaVersion": "2020",
-        "sourceType": "module",
+        "sourceType": "module"
     },
     "rules": {
-        "no-underscore-dangle": [2, { "allow": ["__filename", "__dirname"] }]
+        "no-underscore-dangle": [2, { "allow": ["__filename", "__dirname"] }],
+        "import/extensions": [
+            "error",
+            {
+                "js": "ignorePackages"
+            }
+        ],
+        "no-console": "off"
     }
 }

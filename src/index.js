@@ -14,7 +14,7 @@ const gendiff = (path1, path2, type) => {
   const file1 = parse(data1, getFiletype(path1));
   const file2 = parse(data2, getFiletype(path2));
 
-  return `${file1} ${file2}`;
+  return `${JSON.stringify(file1)} ${JSON.stringify(file2)}`;
 };
 
 export default gendiff;

@@ -9,3 +9,6 @@ test-coverage:
 
 test:
 	npm test
+
+install:
+	npm ci
