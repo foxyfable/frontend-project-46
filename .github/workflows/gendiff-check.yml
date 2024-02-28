@@ -8,8 +8,10 @@ jobs:
       - run: echo "Lauching $GITHUB_WORKFLOW"
       - name: Check out the repository to the runner
         uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
       - name: Install genDiff
-        uses: make install
+        run: make install
       - name: Launch test
         run: make test
       - name: Launch linter
