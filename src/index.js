@@ -8,7 +8,7 @@ const getFixturePath = (filepath) => path.resolve(process.cwd(), filepath);
 const readFile = (filepath) => fs.readFileSync(getFixturePath(filepath), 'utf-8');
 const getFiletype = (filepath) => path.extname(filepath).slice(1);
 
-const gendiff = (path1, path2, type) => {
+const gendiff = (path1, path2) => { // add type
   const data1 = readFile(path1);
   const data2 = readFile(path2);
 

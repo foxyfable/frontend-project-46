@@ -10,6 +10,7 @@
     },
     "rules": {
         "no-underscore-dangle": [2, { "allow": ["__filename", "__dirname"] }],
+        "comma-dangle": ["error", "never"],
         "import/extensions": [
             "error",
             {
