@@ -11,7 +11,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
       - name: Launch test
-        run: npm test
+        run: make test
       - name: Launch linter
         run: npx eslint .
   
