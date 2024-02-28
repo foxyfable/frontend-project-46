@@ -8,12 +8,18 @@ jobs:
       - run: echo "Lauching $GITHUB_WORKFLOW"
       - name: Check out the repository to the runner
         uses: actions/checkout@v4
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
+      - uses: actions/setup-node@master
+      - name: Install genDiff
+        uses: make install
       - name: Launch test
         run: make test
       - name: Launch linter
-        run: npx eslint .
+        run: make lint
+      - name: Check test coverage
+        uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CODECLIMATE_TEST_ID: ${{ secrets.CODECLIMATE_TEST_ID }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
   
