@@ -12,6 +12,10 @@
   },
   "author": "Circe Choi",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "jsdom",
+    "preset": "react-native"
+  },
   "dependencies": {
     "@jest/globals": "^29.7.0",
     "commander": "^12.0.0",
