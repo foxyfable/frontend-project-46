@@ -13,8 +13,7 @@
   "author": "Circe Choi",
   "license": "ISC",
   "jest": {
-    "testEnvironment": "jsdom",
-    "preset": "react-native"
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "@jest/globals": "^29.7.0",
