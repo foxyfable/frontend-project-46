@@ -19,7 +19,7 @@ jobs:
       - name: Check test coverage
         uses: paambaati/codeclimate-action@v5.0.0
         env:
-          CODECLIMATE_TEST_ID: ${{ secrets.CODECLIMATE_TEST_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_TEST_ID }}
         with:
           coverageCommand: make test-coverage
           debug: true
