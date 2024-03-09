@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import process from 'process';
 import _ from 'lodash';
-import parse from './parse.js';
+import parse from './parsers.js';
 
 const getFixturePath = (filepath) => path.resolve(process.cwd(), filepath);
 const readFile = (filepath) => fs.readFileSync(getFixturePath(filepath), 'utf-8');
